@@ -6,6 +6,7 @@
 
 //加载http模块，用来创建HTTP服务器
 var http=require('http');
+//111111
 
 //创建一个HTTP服务器
 var server=http.createServer(function (request,response) {
