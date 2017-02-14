@@ -1,11 +1,13 @@
 /**
- * 处理HTTP请求并响应
+ * 处理HTTP请求并响应git
  */
 
 'use strict';
 
 //加载http模块，用来创建HTTP服务器
 var http=require('http');
+
+
 
 //创建一个HTTP服务器
 var server=http.createServer(function (request,response) {
@@ -21,6 +23,7 @@ var server=http.createServer(function (request,response) {
 	 if(request.url=='/favicon.ico'){
 	 	return;
 	 }
+	 
 	 //响应客户端，指定响应头信息
 	 response.writeHead(200,{
 	 	'Content-Type':'text/html;charset=utf-8',
